@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f9fb;
+  color: #333;
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 5px;
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  margin: 2px;
+  list-style: none;
+  text-decoration: none;
+  gap: 12px;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  margin: 2px 4px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.navegador {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.navegador ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegador li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navegador li a:hover {
+  color: #d9f6ec;
+  transform: scale(1.05);
+}
+
+.ods-14 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  background: url("/img/fundotartaruga.jpg") center/cover no-repeat;
+  filter: brightness(0.95);
+}
+
+.ods-14::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.title-ods {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.title-ods h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.title-ods h2 {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.container-infos-ameaças {
+  width: 100%;
+  height: 500px;
+  background-color: #04303c;
+  padding: 60px 5%;
+  color: #fff;
+}
+
+.container-infos-img {
+  position: relative;
+  width: 300px; /* ajuste conforme o tamanho das imagens */
+  height: 300px;
+  margin-top: 20px;
+  margin-left: auto; /* mantém à direita */
+  margin-right: 20px;
+  margin-top: -100px;
+}
+
+.img-triangle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Posições formando um triângulo */
+.img-top {
+  top: -50px;
+  left: 100px;
+}
+
+.img-left {
+  bottom: 10px;
+  left: -60px;
+}
+
+.img-right {
+  bottom: -70px;
+  right: -40px;
+}
+
+.container-infos-ameaças img {
+  width: 200px; /* ou qualquer tamanho desejado */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-top:hover,
+.img-right:hover,
+.img-left:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container-dados {
+  display: flex; /* usamos flex para melhor centralização */
+  flex-wrap: wrap;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;
+  gap: 125px;
+  padding: 20px;
+}
+
+.card-dados {
+  width: 280px; /* largura fixa */
+  height: 280px; /* altura fixa para aparência mais quadrada */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+}
+
+.card-dados h1 {
+  color: #27839c;
+}
+
+.card-dados:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-dados p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+}
+
+.container-textos {
+  position: relative; /* necessário para que 'top' funcione */
+  top: -220px; /* sobe 500px em relação à posição original */
+  max-width: 60%;
+}
+
+.solucoes-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 60px;
+  width: 100%;
+  min-height: 10vh; /* ocupa altura total da tela */
+  flex-wrap: wrap;
+}
+
+.solucoes-lado {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex: 1; /* ocupa espaço proporcional */
+}
+
+.bloco h3 {
+  font-size: 2rem; /* títulos maiores */
+  color: #0b2c53;
+}
+
+.bloco p {
+  font-size: 1.2rem; /* parágrafos maiores */
+  color: #333;
+}
+
+.solucoes-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solucoes-imagem img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-animais {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #0b2c53;
+  font-weight: 600;
+}
+
+.card-animais img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-animais span {
+  display: block;
+  padding: 12px 10px;
+  font-size: 1rem;
+}
+
+.card-animais:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container-protegendo-especies {
+  width: 100%;
+  height: 1100px;
+  background-color: #04303c;
+  padding: 60px 5%;
+  color: #fff;
+  text-align: center;
+}
+
+.educacao-ambiental {
+  padding: 60px 5%;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.educacao-ambiental h2 {
+  font-size: 1.8rem;
+  color: #02285e;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.educacao-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.educacao-imagens {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.educacao-imagens img {
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.educacao-imagens > img {
+  width: 60%;
+  height: auto;
+}
+
+.imagens-menores {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 38%;
+}
+
+.imagens-menores img {
+  width: 100%;
+  height: auto;
+}
+
+.educacao-conteudo p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #054658;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 60px;
+  font-size: 0.95rem;
+}

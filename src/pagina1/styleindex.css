@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif; /* Usando a fonte Poppins */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+ul{
+    display: flex;
+    margin: 2px;
+    list-style: none;
+    text-decoration: none;
+    gap: 12px;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    margin: 2px 4px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.ods-14 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ods-14::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/img/imgnoticias.PNG") no-repeat center center/cover;
+    filter: brightness(0.4); /* escurece só a imagem */
+    z-index: 0;
+}
+
+.title-ods {
+    color: #fff;
+    z-index: 1;
+    margin-left: 5%;
+    position: relative;
+}
+
+.title-ods h1{
+    font-size: 2.5rem;
+}
+
+.title-ods h2{
+    font-size: 1rem;
+}
+
+.img-mergulhador{
+    position: relative;
+    left: 10%;
+    width: 25rem;
+    height: 35rem;
+}
+
+.figcaption-textos1 {
+    font-size: 1.2rem;
+    position: relative;  /* ou relative, dependendo do contexto */
+    left: 48%;           /* move para o lado direito da tela */
+    width: 50%;          /* encurta o espaço do texto */
+    top: -28rem;
+    text-align: start;   /* opcional: alinha o texto à direita */   
+}
+
+.mar-descobertas {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.card-container-infos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    
+}
+
+.card {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+    color: #fff;
+    background-color: #054658; /* Cor de fundo mais escura para o corpo do card */
+}   
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);   
+}
+
+.card,
+.card *,
+.card-body,
+.card-body * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.title-card-text{
+    color: #fff;
+    text-align: start;
+}
+
+.card-text{
+    color: #fff;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.vida-marinha {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.mar-descobertas {
+    margin-top: -12rem; /* Sobe a seção */
+    padding-top: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #04303C;
+    padding-bottom: 20px;
+}
+
+.navegador {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navegador ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navegador li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navegador li a:hover {
+    color: #D9F6EC;
+    transform: scale(1.05); 
+}
+
+.turismo-santos {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.paragrafo-turimos {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.espacos-Turistico {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.imgturismo {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgturismo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #054658;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 60px;
+    font-size: 0.95rem;
+}
